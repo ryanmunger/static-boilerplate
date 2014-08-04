@@ -3,7 +3,7 @@ static-boilerplate
 
 Static boilerplate using npm, grunt, sass and autoprefixer.
 
-## Run these commands once you've pulled the repo down
+## Run these commands
 
 - $ npm install && bower install
 - $ grunt
