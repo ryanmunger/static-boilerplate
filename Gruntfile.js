@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('package.json'),
     jade: {
       compile: {
         options: {
@@ -14,17 +14,17 @@ module.exports = function(grunt) {
         }
       }
     },
-		sass: {
-			dist: {
-				files: {
-					'css/styles.css' : 'sass/styles.sass'
-				},
+    sass: {
+      dist: {
+        files: {
+          'css/styles.css' : 'sass/styles.sass'
+          },
         options: {
           style: 'expanded',
           sourcemap: true
         }
-			}
-		},
+      }
+    },
     jshint: {
       files: ['Gruntfile.js', 'js/**/*.js'],
       options: {
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         dest: 'css/styles.css'
       }
     },
-		watch: {
+    watch: {
       options: {
         livereload: true
       },
