@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-	grunt.initConfig({
+  grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jade: {
       compile: {
@@ -58,12 +58,12 @@ module.exports = function(grunt) {
       },
       files: ['views/**/*.jade', 'sass/**/*.sass', 'js/**/*.js'],
       tasks: ['jade', 'sass', 'jshint', 'autoprefixer']
-		}
-	});
-	grunt.loadNpmTasks('grunt-contrib-jade');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
+    }
+  });
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default',['watch']);
+  grunt.registerTask('default',['watch']);
 };
